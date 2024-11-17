@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <main>
+            <h1>
+                BMI CALCULATOR
+            </h1>
+            <form onsubmit="calculate(event)" id="bmi_form">
+                <input type="text" value="120" class="input_height">
+                <select name="measurement_height" id="measurement_height">
+                    <option value="cm">cm</option>
+                    <option value="ft">ft</option>
+                </select>
+                <br>
+                <input type="text" value="70" class="input_weight">
+                <select name="measurement_weight" id="measurement_weight">
+                    <option value="kg">kg</option>
+                    <option value="lbs">lbs</option>
+                </select>
+                <br>
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result">
+
+            </div>
+        </main>
+        
+        
+    </body>
+    <script src="JS/app.js"></script>
+</html>
